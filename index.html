@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Démonstration API GEO MEDIA FS</title>
+	</head>
+	<body>
+		<section>
+			<h1>API GEOLOCATION</h1>
+
+			<button id="geoButton">Obtenir</button>
+
+			<p id="geoLatitude"></p>
+			<p id="geoLongitude"></p>
+		</section>
+
+		<section>
+			<h1>API MEDIA DEVICES</h1>
+
+			<button id="cameraButton">Camera</button>
+			<button id="photoButton">Photo</button>
+
+			<video id="video" style="width: 200px; height: 150px"></video>
+			<img id="photo" style="width: 200px; height: 150px" />
+			<canvas
+				id="canvas"
+				style="display: none; width: 200px; height: 150px"></canvas>
+		</section>
+
+		<section>
+			<h1>API FILE SYSTEM</h1>
+
+			<button id="createFileButton">Créer</button>
+			<button id="getFileButton">Ouvrir</button>
+
+			<p id="fileText"></p>
+		</section>
+
+		<script type="module" src="./src/geo.js"></script>
+		<script type="module" src="./src/media.js"></script>
+		<script type="module" src="./src/fs.js"></script>
+	</body>
+</html>
