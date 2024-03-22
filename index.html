@@ -37,8 +37,29 @@
 			<p id="fileText"></p>
 		</section>
 
+		<section>
+			<h1>FIREBASE</h1>
+
+			<button id="sendToDbButton">Envoyer vers la DB</button>
+			<button id="getFromDbButton">Récupérer depuis la DB</button>
+
+			<p id="message"></p>
+
+			<div
+				style="display: flex; flex-direction: column; gap: 20px"
+				id="templateContainer">
+				<template id="fromDbTemplate">
+					<div class="fromDbTemplate--container"></div>
+					<img src="" alt="" class="fromDbTemplate--img" />
+					<p class="fromDbTemplate--latitude"></p>
+					<p class="fromDbTemplate--longitude"></p>
+				</template>
+			</div>
+		</section>
+
 		<script type="module" src="./src/geo.js"></script>
 		<script type="module" src="./src/media.js"></script>
 		<script type="module" src="./src/fs.js"></script>
+		<script type="module" src="./src/db.js"></script>
 	</body>
 </html>
